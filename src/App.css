@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+.app{
+  background-color: #242424;
+  height: 100vh;
+  position: relative;
+}
+body{
+  background-color: #242424;
+}
+::selection {
+  color: #fff;
+  background: #64EEBC;
+}
+
+/*NAVBAR LOGO*/
+.nav_logo_light{
+  font-weight: 200;
+}
+.nav_logo_bold{
+  font-size: 34px;
+  font-weight: 400;
+  color: #64EEBC;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}

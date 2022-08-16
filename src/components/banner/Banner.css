@@ -1,0 +1,172 @@
+.banner{
+    color: #fff;
+    object-fit: contain;
+    height: 100vh; 
+    position: relative;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+
+}
+.banner_contents{
+    padding-left: 150px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    width: 68%;
+    z-index: 1;
+}
+.banner_original_thin{
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+.banner_original_bold{
+    font-weight: 700;
+}
+.banner_title{
+    text-transform: uppercase;
+    color: #64EEBC;
+    font-size: 120px;
+    letter-spacing: 16px;
+    line-height: 110px;
+    word-wrap: break-word;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #24242480
+}
+
+
+/*BANNER BUTTONS*/
+.banner_button{
+    width: 248px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+    color: #fff;
+    background-color: #242424;
+    border: none;
+    border-radius: 0.2vw;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 4px;
+    transition: all 0.2s;
+}
+.banner_button:hover{
+    color: #000;
+    background-color: #64EEBC;
+    transition: all 0.2s;
+}
+.banner_button_lista{
+    /* background-color:  #24242480;*/
+    background-color: transparent;
+    border: 1px solid #ffffff80;
+}
+
+/*SELECT*/
+
+.movie_list{
+    position: absolute;
+    top: -200px;
+    right: -25%;
+    margin-right: 80px; 
+    z-index: 1;
+}
+.movie_list span{
+    padding: 10px;
+    padding-right: 0;
+    font-size: 18px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.movie_list select{
+    padding: 10px;
+    padding-left: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    letter-spacing: 4px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.movie_list select:focus{
+     outline: none;
+}
+.movie_list select option{
+    color: #fff;
+    background-color: #242424;
+    border: none;
+    outline-offset: none;
+    outline-style: none;
+    outline: none;
+}
+
+.banner--fadeBottom{
+    position:absolute;
+    bottom:-3px;
+    width:100%;
+    height:20vh;
+    background: -moz-linear-gradient(top,  #89fff100 0%, #242424 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#89fff100), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #89fff100 0%,#242424 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #89fff100 0%,#242424 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #89fff100 0%,#242424 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #89fff100 0%,#242424 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0089fff1', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+@media (max-width: 1065px){
+
+    .banner{
+        background-position: center;
+        background-size: contain;
+        background-size: 0%;
+    }
+
+    .banner_contents{
+        display: flex;
+        flex-direction: column;
+        top: 60%;
+        padding-left: 15%;
+        z-index: 1;
+    }
+   
+    .movie_list{
+        position: initial;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        margin-right: 0;
+        z-index: 1;
+    }
+    .banner_title_div{
+        text-align: center;
+    }
+    .banner_buttons{
+        text-align: center;
+    }
+    .banner_button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .banner_title{
+        font-size: 3rem;
+        line-height: 90px;
+        letter-spacing: 2px;
+    }
+}
+@media (max-width: 481px){
+    .banner_contents{
+        top: 40%;
+    }
+}

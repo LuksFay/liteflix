@@ -1,0 +1,88 @@
+/*CONTENEDORES*/
+.fileContainer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.fileInputContainer{
+    display: flex;
+    justify-content: center;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
+
+/*IMAGEN*/
+.fileImgInput{
+    display: none;
+}
+
+.fileImgLabel{
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+    border: dashed 1px;
+    text-align: center;
+}
+
+/*TITULO*/
+
+.fileTitleInput{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #FFF;
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    width: 50%;
+    font-size: 16px;
+}
+
+/*BOTON*/
+
+.fileImgButton{
+    background-color: fff;
+    padding: 15px 50px;
+    font-size: 15px;
+    border: none;
+    border-radius: 0;
+    width: 50%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+.fileImgButton:hover{
+    background-color: #64EEBC;
+    color: #fff;
+}
+
+
+.text{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.congrats{
+    font-weight: 700;
+}
+.congratsInfo{
+    font-weight: 200;
+}
+
+.formClass{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#frm:invalid #btns {
+    pointer-events: none;
+    cursor: not-allowed;
+    color: gray;
+  }

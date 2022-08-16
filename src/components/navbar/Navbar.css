@@ -1,5 +1,4 @@
 /*NAVBAR GENERAL*/
-
 .nav{
     top: 0;
     position: fixed;
@@ -44,9 +43,6 @@
     grid-template-columns: repeat(3, max-content);
     
 }
-
-
-
 /*NAVBAR MENU*/
 .nav_hamburguer{
     transform: var(--state-hamburguer);
@@ -73,7 +69,7 @@
     align-content: center;
     background-color: #242424;
     gap: 2em;
-    
+    user-select: none;
 
     transform: var(--state-menu);
     transition: 0.2s transform;
@@ -94,8 +90,6 @@
     margin: 72px 0;
     font-weight: 400;
 }
-
-
 /*NAVBAR BUTTONS*/
 .nav_button{
     width: 248px;
@@ -112,9 +106,6 @@
     color: #64EEBC;
     transition: all 0.2s;
 }
-
-
-
 /*NAVBAR ICONS*/
 .icon_size{
     width: 2rem;
@@ -131,6 +122,9 @@
 }
 
 @media (max-width: 768px){
+    .nav_links{
+        padding-top: 20%;
+    }
     .nav_notification, .nav_button{
         display: none;
     }
@@ -146,13 +140,7 @@
         justify-content: space-between;
         width: 85vw;
     }
-    }
-@media (max-width: 376px){
-    .nav_links{
-        padding-top: 40px;
-    }
     .agregar{
         margin: 0;
     }
-
-}
+    }

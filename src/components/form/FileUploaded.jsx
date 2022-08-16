@@ -1,15 +1,12 @@
 import React from 'react'
 
 const FileUploaded = ({setModalOpen, modalOpen, setFormComplete}) => {
-
-
-const finishedForm = () =>{
-  setModalOpen(!modalOpen)
-  setTimeout(function(){
-    setFormComplete(false);
-}, 1000);
-}
-  
+  const finishedForm = () =>{
+    setModalOpen(!modalOpen)
+    setTimeout(function(){
+      setFormComplete(false);
+  }, 1000);
+  }
   return (
     <>
         <div className="fileContainer text">

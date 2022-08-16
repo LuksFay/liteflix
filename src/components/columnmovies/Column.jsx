@@ -2,17 +2,8 @@ import { useState, useEffect } from 'react';
 import axios from '../../axios';
 import './Column.css'
 
-const base_url = "https://image.tmdb.org/t/p/original/"
 const Column = ({fetchUrl}) => {
     const [movies, setMovies] = useState([]);
-
-    const truncate = (str, n) =>{
-        return str?.length > n ? str.substr(0, n-1) : str;
-    }
-    const truncateDate = (str, n) =>{
-        return str?.length > n ? str.substr(0, n-1) : str;
-    }
-    
 
     useEffect(()=>{
         async function fetchData(){
@@ -22,6 +13,16 @@ const Column = ({fetchUrl}) => {
         }
         fetchData();
     },[fetchUrl]);
+    
+    const truncate = (str, n) =>{
+        return str?.length > n ? str.substr(0, n-1) : str;
+    }
+    const truncateDate = (str, n) =>{
+        return str?.length > n ? str.substr(0, n-1) : str;
+    }
+    
+    const base_url = "https://image.tmdb.org/t/p/original/"
+
     return (
     <div className='column'>
 

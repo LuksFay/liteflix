@@ -3,9 +3,7 @@ import ProgressBar from '../progressbar/ProgressBar';
 import './FileUpload.css'
 import '../columnmovies/Column.css';
 
-
 const FileUpload = ({setFormComplete}) => {
-
     const [form, setForm] = useState({
         title: '',
         backdrop_path: '',
@@ -13,7 +11,6 @@ const FileUpload = ({setFormComplete}) => {
     const[image, setImage] = useState(false)
     const [error, setError] = useState(false)
     
-
     // FUNCION CARGAR IMAGEN
     const handleImage = (files) => {
         console.log(files)
@@ -34,9 +31,7 @@ const FileUpload = ({setFormComplete}) => {
         return image
     };
 
-
     //FUNCION CARGAR EL FORMULARIO 
-
     const onSubmit = (e) => {
       e.preventDefault();
       const { title, backdrop_path } = form;
@@ -53,8 +48,6 @@ const FileUpload = ({setFormComplete}) => {
     const handleDragOver = (event) => {
       event.preventDefault()
     }
-
-     
     const handleDrag = (event) => {
       event.preventDefault()
     }
@@ -62,16 +55,13 @@ const FileUpload = ({setFormComplete}) => {
     const handleDrop = (ev) => {
       ev.preventDefault();
       if (ev.dataTransfer.items) {
-        // DataTransferItemList accede a los archivos
         for (let i = 0; i < ev.dataTransfer.items.length; i++) {
-          // Si los elementos descartados no son archivos, rechazados!
           if (ev.dataTransfer.items[i].kind === 'file') {
             const file = ev.dataTransfer.items[i].getAsFile();
             handleImage(file)
           }
         }
       } else {
-        // DataTransferItemList accede a los archivos
         for (let i = 0; i < ev.dataTransfer.files.length; i++) {
           handleImage(ev.dataTransfer.files[i])
         }

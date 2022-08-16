@@ -1,3 +1,6 @@
+
+/*GENERAL*/
+
 .column_posters{
   display: flex;
   flex-direction: column;
@@ -9,6 +12,8 @@
   transition: transform 450;
   transition: 0.5s ease all;
 }
+
+/*TODAS LAS ANIMACIONES DEL CONTAINER*/
 .poster_container:hover{
   transform: scale(1.08);
   transition: 0.5s ease all;
@@ -27,8 +32,6 @@
   color: #fff;
   transition: 0.5s ease all;
 }
-
-
 .poster_container:hover .column_poster_movie_info_text{
   visibility: visible;
   font-size: 16px
@@ -53,7 +56,7 @@
   width: 16px;
 }
 
-
+/*POSTER PELICULA Y SU CONTENIDO*/
 
 .column_poster{
     object-fit: scale-down;
@@ -62,15 +65,12 @@
     margin-bottom: 10px;
     z-index: 1;
 }
-
 .column_poster_info{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-
-
 .column_poster_name{
   position: absolute;
   bottom: 15px;
@@ -99,6 +99,9 @@
   font-size: 0px
 }
 
+
+/*ICONOS*/
+
 .play_icon_size{
   padding-top: 12px;
   padding-left: 4px;
@@ -124,7 +127,6 @@
   transition: 0s ;
   border: 1px solid #242424;
 }
-
 .play_icon_circle:hover .play_icon_white{
   display: none;
 }
@@ -133,7 +135,6 @@
   display: block;
   transition: 0.5s ease;
 }
-
 .play_icon_black{
   transition: 0.5s ease;
   display: none;
@@ -147,6 +148,14 @@
   width: 0px;
   transition: 0.5s ease all;
 }
+
+
+
+
+
+
+
+
 
 
 .poster--fadeBottom{

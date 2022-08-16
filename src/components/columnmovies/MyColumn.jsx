@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import './Column.css'
 
 const MyColumn = () => {
-
     const [myMovies, setMyMovies] = useState([]);
 
     useEffect(() => {
@@ -10,8 +9,6 @@ const MyColumn = () => {
     setMyMovies([storageMovie]);
     }, []); 
 
-    
-    
     return (
     <div className='column'>
         {myMovies.length > 0 && (

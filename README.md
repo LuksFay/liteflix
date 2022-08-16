@@ -8,5 +8,3 @@ Creada usando ReactJs, CSS y Axios.
 
 - Desktop
 - Mobile
-
-https://github.com/LuksFay/liteflix-commits
